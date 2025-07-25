@@ -33,7 +33,7 @@ refer to Docker [getting started](https://docs.docker.com/get-started/)
 docs for more detail.
 
 
-###Stack Diagram
+### Stack Diagram
 
 
 
