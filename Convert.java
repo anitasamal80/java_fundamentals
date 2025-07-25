@@ -24,7 +24,7 @@ public class Convert {
                 cm, feet, remainder);
     }
 */
-    // Exercise - 3.2 Program to convert a temperature from Celsius to Fahrenheit.
+    // Exercise - 3.1 Program to convert a temperature from Celsius to Fahrenheit.
 
     public static void tempConvert(Scanner scanner) {
         System.out.println("---- TEMPERATURE CONVERTER PROGRAM ----");

@@ -4,7 +4,7 @@ public class MyData {
 //Exercise 2.2
 
     public static void myMethod(){
-        System.out.println("Hello World!\n");
+        //System.out.println("Hello World!\n");
         String day = "Thursday";
         int date = 16;
         String month = "July";
@@ -50,32 +50,38 @@ baffle();
         System.out.print("wug");
         ping();
     }
-
-    public static void ping() {
+public static void ping() {
         System.out.println(".");
     }
 
 
 
+    // Exercise 3.1 program for data format
 
-    // program for data format
-/*
     public static void formaterExample(){
-        String name = "Spongebob";
-        char firstName = 'S';
+        String name = "Robin";
+        char firstName = 'R';
         int age = 35;
         double height = 44.0;
-        boolean isEmployeed = true;
+        
 
 // \n to add a line manually after every sentence
 
         System.out.printf("Hello %s\n ",name);
-        System.out.printf("Your name start with letter %c and you are %d years old. You are %.1f tall and you are Employed %b\n ",firstName, age, height, isEmployeed);
+        System.out.printf("Your name start with letter %c and you are %d years old. You are %.1f tall.\n ",firstName, age, height);
+        // Through an error if you forget to give placeholder.
+        //Exception in thread "main" java.util.UnknownFormatConversionException: Conversion = '.'
+        //at java.base/java.util.Formatter.parse(Formatter.java:2818)
+        //at java.base/java.util.Formatter.format(Formatter.java:2744)
+        //at java.base/java.io.PrintStream.format(PrintStream.java:1183)
+        //at java.base/java.io.PrintStream.printf(PrintStream.java:1081)
+        //at MyData.formaterExample(MyData.java:71)
+        
 
     }
 
 
-*/
+
 //exercise 5.2
 
     public static void zoop(String fred, int bob) {
