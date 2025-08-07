@@ -173,7 +173,17 @@ public class Main {
         
         }
         else if(userInput == 8){
-            //Chapter8.banana(a);
+            int[] a = {1,2,3,4,5,6};
+            System.out.println("" + Chapter8.banana(a));
+            System.out.println();
+            System.out.println("" + Chapter8.grapefruit(a, 2));
+            System.out.println("" + Chapter8.pineapple(a, 4));
+            System.out.println();
+            System.out.println("The output is: ");
+            int[] bob = Chapter8.make(5);
+            Chapter8.dub(bob);
+            System.out.println(Chapter8.mus(bob));
+
 
         }
         else if(userInput == 9){
