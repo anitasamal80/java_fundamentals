@@ -173,11 +173,24 @@ public class Main {
         
         }
         else if(userInput == 8){
-            int[] a = {1,2,3,4,5,6};
-            System.out.println("" + Chapter8.banana(a));
-            System.out.println();
-            System.out.println("" + Chapter8.grapefruit(a, 2));
-            System.out.println("" + Chapter8.pineapple(a, 4));
+            System.out.println("Testing for cube");
+            double[] a = {1.0, 2.0, 3.0};
+            double[] cubes = Chapter8.powArray(a, 3);
+            for (double cube : cubes) {
+                System.out.print(" cube is " + cube);
+            
+            }
+            System.out.println("Histogram ");
+            int[] scores = Chapter8.randomArray(10);
+            //int a = Chapter8.inRange(scores, 90, 100);
+            int b = Chapter8.inRange(scores, 80, 90);
+            int c = Chapter8.inRange(scores, 70, 80);
+            int d = Chapter8.inRange(scores, 60, 70);
+            int f = Chapter8.inRange(scores, 0, 60);
+            int[] result = Chapter8.histogram(scores, 100);
+            for(int score : result){
+                System.out.println("histogram score " + score);
+            }
             System.out.println();
             System.out.println("The output is: ");
             int[] bob = Chapter8.make(5);
@@ -187,8 +200,10 @@ public class Main {
 
         }
         else if(userInput == 9){
+            
 
         }
+
         else{
             System.out.println("Invalid option. Please choose option between (1 - 9) : ");
             menu(scanner, number);
