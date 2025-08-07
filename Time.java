@@ -40,6 +40,25 @@ public class Time {
 
     }
 
+    public static void countup(int n) {
+        if (n == 0) {
+            System.out.println("Blastoff!");
+        } else {
+            countup(n - 1);
+            System.out.println(n);
+        }
+
+}
+
+public static double calculateArea(double radius){
+    double result = Math.PI * radius * radius;
+    return result;
+    
+}
+//And here is how it is invoked:
+//countup(3);
+//System.out.println("Have a nice day.");
+
 
 
 }

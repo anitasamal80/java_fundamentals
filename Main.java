@@ -2,12 +2,13 @@
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 
+//import static Chapter7.check;
 import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
     public static void menu(Scanner scanner, int number){
-        System.out.println("choose chapter wise exercise for solution  :-\n 1:chapter1 \n 2:chapter2 \n 3:chapter3 \n 4:chapter4 \n 5:chapter5 \n");
+        System.out.println("choose chapter wise exercise for solution  :-\n 1:chapter1 \n 2:chapter2 \n 3:chapter3 \n 4:chapter4 \n 5:chapter5 \n 6:chapter6 \n 7:chapter7 \n 8:chapter8 \n 9:chapter9\n");
         System.out.print("Choose your option: ");
         int userInput = scanner.nextInt();
 
@@ -15,6 +16,7 @@ public class Main {
             Tester.exerciseOne();
             Tester.helloWorld();
             Tester.errorFixing();
+            
         }
 
         else if(userInput == 2){
@@ -24,6 +26,11 @@ public class Main {
             System.out.println();
             System.out.println("Exercise 2.3 ");
             Time.time();
+            Time.countup(3);
+            double Area = Time.calculateArea(6);
+            System.out.println("Area is : " + Area);
+            Chapter6.add(4,8);
+            
         }
         else if(userInput == 3){
             System.out.println();
@@ -90,9 +97,90 @@ public class Main {
             Tester.guessMyNumber(scanner, number);
 
         }
+        else if(userInput == 6){
+            //exercise 6.2
 
+            System.out.println(Chapter6.isDivisible(3, 10));
+            System.out.println(Chapter6.isTriangle(2,5,9));
+
+            //exercise 6.4
+
+            System.out.println("Result of 6.4.3");
+            System.out.println("multadd test result is: "+ Multadd.multadd(1.0, 2.0, 3.0));
+            System.out.println();
+            System.out.println("Result of 6.4.4 for sin and log questions ");
+            double pi = Math. PI;
+            double result1 = Multadd.multadd (1.0, Math.sin(pi / 4), Math.cos (pi / 4) / 2);
+            System.out.println("Result 1" + result1);
+            double result2 = Multadd.multadd(1.0, Math.log(10), Math.log(20));
+            System.out.println("Result 2 is:" + result2);
+
+            System.out.println();
+            System.out.println("Result of 6.4.5");
+            System.out.println("Result 3 is: "+ Multadd.expSum(2.0));
+
+            //exercise 6.5
+            boolean flag1 = Chapter6.isHoopy(202);
+            boolean flag2 = Chapter6.isFrabjuous(202);
+            System.out.println(flag1);
+            System.out.println(flag2);
+            if (flag1 && flag2) {
+            System.out.println("ping!");
+            }
+            if (flag1 || flag2) {
+            System.out.println("pong!");
+            }
+            System.out.println();
+            System.out.println("Output of exercise 6.6 is : ");
+            System.out.println(Chapter6.prod(1, 4));
+            System.out.println();
+
+            //Exercise 6.7
+            System.out.println("Odd Integers: ");
+            int totalSum = Chapter6.oddSum(5);
+            
+            System.out.println ("Total sum of odd integers = " + totalSum);
+            System.out.println();
+
+            //Exercise 6.8
+            System.out.println("Ackermann Function");
+            System.out.println("Ackermann Function(O, 1) = " + Chapter6.ack(0, 1));
+            System.out.println();
+
+            //Exercise 6.9
+            System.out.println("Power Function: " +Chapter6.power(2,0));
+
+
+        }
+        else if(userInput == 7){
+            System.out.println("Output Of Exercise 7.1");
+            Chapter7.loop(10);
+            System.out.println("Square Root Finder Program");
+
+            System.out.println("Please enter a number to find the square root : ");
+            double number1 = scanner.nextDouble();
+            double result = Chapter7.squareRoot(number1,scanner);
+            System.out.println("The square root of " + number1 + " is " + result);
+            System.out.println("Factorial Using Recursive Method is:  " +Chapter7.factorial(5));
+            System.out.println("Iterative Factorial Method : " + Chapter7.factorialIterative(5));
+            System.out.println("Power Iterative Method " +Chapter7.powerIterativeMethod(2, 10));
+            //int n = 20;
+            System.out.println("Exponential Check "+Chapter7.myexp(result, 20));
+            double mathResult = Math.exp(result);
+            System.out.println("Math Exponential Result Check Using Math.exp() is " + mathResult);
+            
+    
+        
+        }
+        else if(userInput == 8){
+            //Chapter8.banana(a);
+
+        }
+        else if(userInput == 9){
+
+        }
         else{
-            System.out.println("Invalid option. Please choose option between (1 - 5) : ");
+            System.out.println("Invalid option. Please choose option between (1 - 9) : ");
             menu(scanner, number);
             //System.out.println("End of Programming...");
         }
@@ -106,6 +194,7 @@ public class Main {
         Random random = new Random();
         int number = random.nextInt(100) + 1;
         menu(scanner,number);
+
 
         //Convert.calculateConversion(scanner);
 
