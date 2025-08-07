@@ -10,6 +10,9 @@
 - Chapter 3 (Input and Output)
 - Chapter 4 (Void methods)
 - Chapter 5 (Conditional and logic)
+- Chapter 6 (Value Methods)
+- Chapter 7 (Loops)
+- Chapter 8 (Arrays)
 
 
 ### Installation
