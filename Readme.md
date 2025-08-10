@@ -5,14 +5,15 @@
 
 ### Features
 
-- Chapter 1 (The way of the program.)
-- Chapter 2 (Variables and operators.)
+- Chapter 1 (The way of the program)
+- Chapter 2 (Variables and operators)
 - Chapter 3 (Input and Output)
 - Chapter 4 (Void methods)
 - Chapter 5 (Conditional and logic)
 - Chapter 6 (Value Methods)
 - Chapter 7 (Loops)
 - Chapter 8 (Arrays)
+- Chapter 9 (Strings and things)
 
 
 ### Installation
