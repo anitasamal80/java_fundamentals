@@ -173,6 +173,7 @@ public class Main {
         
         }
         else if(userInput == 8){
+            
             System.out.println("Testing for cube");
             double[] a = {1.0, 2.0, 3.0};
             double[] cubes = Chapter8.powArray(a, 3);
@@ -196,10 +197,21 @@ public class Main {
             int[] bob = Chapter8.make(5);
             Chapter8.dub(bob);
             System.out.println(Chapter8.mus(bob));
+            System.out.println();
+            System.out.println("Testing Factors ");
+            int [] factor1 = {3,5,7};
+            System.out.println(Chapter8.areFactors(factor1, 60));
+            System.out.println();
+            int[] max = {2,6,5,9};
+            System.out.println("prime number check is  " + Chapter8.arePrimeFactors(30, max));
+            System.out.println();
+            int[] maxIndexNo = {2,4,3,8,9};
+            System.out.println("Largest index number is " +Chapter8.indexOfMax(maxIndexNo));
 
 
         }
         else if(userInput == 9){
+            Chapter9.jj();
             
 
         }

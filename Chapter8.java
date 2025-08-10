@@ -97,5 +97,74 @@ public static int[] histogram(int[] scores, int noOfCounter){
         }
         return counts;
     }
+//Exercise 8.4
+    public static int indexOfMax(int[] arr){
+        int maxIndex = 0;
+        for (int i=1; i < arr.length; i++){
+            if (arr[i] > arr[maxIndex]){
+
+                maxIndex = i;
+            }
+        }
+    return maxIndex;
+    // you cannot use an enhanced for loop because it iterates over value not on index but you need value and index no to track for maximum.
+
+
+    }
+// exercise 8.6
+    public static boolean areFactors(int[] arrInt, int n){
+
+        for(int i=0; i< arrInt.length; i++){
+            if (i % n==0){
+                return true;
+            }
+        }
+        return false;
+        }
+
+  
+//Enhanced for loop for fators:
+/*
+    for (int factor :arrInt) {
+        if (n % factor == 0){
+            return true;
+        }
+    }
+    return false;
+    }
+
+    */
+//exercise 8.7
+
+// to check n is prime 
+   public static boolean isPrime(int n){
+        for (int i = 3; i * i <= n; i += 2) {
+            if (n % i == 0){
+                 return false;
+            }
+        return true;
+        
+    }
+        return false;
+
+   }
+
+   public static boolean arePrimeFactors(int num, int[] arr) {
+        
+
+        int product = 1; 
+
+        for (int value : arr) {
+            if (!isPrime(value)) {
+                return false; 
+            }
+            product *= value;
+        }
+
+   
+    return product == num;
+   }
+    
 
 }
+
