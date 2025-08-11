@@ -211,8 +211,14 @@ public class Main {
 
         }
         else if(userInput == 9){
-            Chapter9.jj();
-            
+            //Chapter9.jj();
+            String s1 = "Hello" + 'A';
+            System.out.println("To add string with a char is : " + s1);   //It will concatenate.
+            System.out.println();
+            Chapter9.letterHist("hello");
+            System.out.println();
+            System.err.println("Abecedarian " + Chapter9.isAbecedarian("hello"));
+            System.out.println("Is doubloon " + Chapter9.doubloon("world"));
 
         }
 
