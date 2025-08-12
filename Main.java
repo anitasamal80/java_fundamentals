@@ -99,7 +99,7 @@ public class Main {
         }
         else if(userInput == 6){
             //exercise 6.2
-
+            System.out.println();
             System.out.println(Chapter6.isDivisible(3, 10));
             System.out.println(Chapter6.isTriangle(2,5,9));
 
@@ -153,6 +153,7 @@ public class Main {
 
         }
         else if(userInput == 7){
+            System.out.println();
             System.out.println("Output Of Exercise 7.1");
             Chapter7.loop(10);
             System.out.println("Square Root Finder Program");
@@ -160,14 +161,22 @@ public class Main {
             System.out.println("Please enter a number to find the square root : ");
             double number1 = scanner.nextDouble();
             double result = Chapter7.squareRoot(number1,scanner);
+            System.out.println();
             System.out.println("The square root of " + number1 + " is " + result);
+            System.out.println();
             System.out.println("Factorial Using Recursive Method is:  " +Chapter7.factorial(5));
+            System.out.println();
             System.out.println("Iterative Factorial Method : " + Chapter7.factorialIterative(5));
+            System.out.println();
             System.out.println("Power Iterative Method " +Chapter7.powerIterativeMethod(2, 10));
+            System.out.println();
             //int n = 20;
             System.out.println("Exponential Check "+Chapter7.myexp(result, 20));
+            System.out.println();
             double mathResult = Math.exp(result);
+            System.out.println();
             System.out.println("Math Exponential Result Check Using Math.exp() is " + mathResult);
+            System.out.println();
             
     
         
