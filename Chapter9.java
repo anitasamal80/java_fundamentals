@@ -1,15 +1,14 @@
+
+
 public class Chapter9{
 
-    public static void jj(){
-        System.out.println("hello");
-    }
-    // Exercise 9.2
+    
+    // Program  that returns a histogram of the letters in the string.
     public static void letterHist(String word){
        
         word = word.toLowerCase();
         
         int[] histogram = new int[26];
-        
         
         char[] alphabets = lowerAlphabets();
         for (int i =0; i< word.length(); i++){
@@ -35,6 +34,7 @@ public static char[] lowerAlphabets() {
         }
         return alphabets;
     }
+
 // Program to check Abecedarian
 
     public static boolean isAbecedarian(String s){
@@ -51,7 +51,8 @@ public static char[] lowerAlphabets() {
         return abecedarian;
     }
 
-    // program to check “doubloon”
+
+// program to check “doubloon”
 
     public static boolean  doubloon(String s){
         s = s.toLowerCase();
@@ -66,4 +67,40 @@ public static char[] lowerAlphabets() {
         return doubleChar;
     }
 
+
+// program to check whether the word is an "anagrams" or not.
+
+    public static boolean anagrams(String str1, String str2){
+        str1 = str1.toLowerCase();
+        str2 = str2.toLowerCase();
+        boolean result = false;
+            if (str1.length() == str2.length()){ 
+                result = true;
+                for (int i = 0; i < str1.length();i++) {
+                   if( str2.indexOf(str1.charAt(i)) == -1){
+                        result = false;
+                        break;
+                   }
+                }    
+            }      
+        return result;
+   
+    }
+
+
+// Program that takes two strings and checks whether the set of tiles can spell the word. 
+
+public static boolean canSpell(String tile, String word){
+    boolean result = true;
+    tile = tile.toLowerCase();
+    word = word.toLowerCase();
+    for (int i=0; i < word.length(); i++){
+//check each character of the word exist in the supplied tiles
+
+        if (tile.indexOf(word.charAt(i)) == -1){
+        return false; 
+    }
+    }
+    return result;    
+   }
 }

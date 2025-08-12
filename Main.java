@@ -181,6 +181,7 @@ public class Main {
                 System.out.print(" cube is " + cube);
             
             }
+            System.out.println();
             System.out.println("Histogram ");
             int[] scores = Chapter8.randomArray(10);
             //int a = Chapter8.inRange(scores, 90, 100);
@@ -211,14 +212,21 @@ public class Main {
 
         }
         else if(userInput == 9){
-            //Chapter9.jj();
+            
             String s1 = "Hello" + 'A';
             System.out.println("To add string with a char is : " + s1);   //It will concatenate.
             System.out.println();
+            System.out.println("Histogram of letter in the string.");
             Chapter9.letterHist("hello");
             System.out.println();
             System.err.println("Abecedarian " + Chapter9.isAbecedarian("hello"));
-            System.out.println("Is doubloon " + Chapter9.doubloon("world"));
+            System.out.println();
+            System.out.println("Is Doubloon " + Chapter9.doubloon("world"));
+            System.out.println();
+            System.out.println("Check Anargam " + Chapter9.anagrams("stop", "spot"));
+            System.out.println();
+            System.out.println("Check Spelling  " + Chapter9.canSpell("gifnas", "fangsu"));
+            System.out.println();
 
         }
 
