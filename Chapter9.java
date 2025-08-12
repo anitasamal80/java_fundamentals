@@ -103,4 +103,45 @@ public static boolean canSpell(String tile, String word){
     }
     return result;    
    }
+
+// Returns the first character of the given String.
+
+    public static char first(String s) {
+        return s.charAt(0);
+    }
+    
+
+// Returns all but the first letter of the given String.
+    public static String rest(String s) {
+        return s.substring(1);
+    }
+
+//Returns all but the first and last letter of the String.
+
+    public static String middle(String s) {
+        return s.substring(1, s.length() - 1);
+    }
+
+// Returns the length of the given String.
+
+    public static int length(String s) {
+        return s.length();
+    }
+
+// Print the string
+
+    public static void printString(String s){
+        for (int i=0; i<s.length(); i++){
+            System.out.println(s.charAt(i));
+        }
+    }
+
+// Print the string in backword
+    public static void printBackward(String s){
+        for (int i=(s.length() -1); i>=0; i--){
+            System.out.println(s.charAt(i));
+        }
+
+    }
+
 }

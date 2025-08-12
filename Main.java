@@ -227,7 +227,18 @@ public class Main {
             System.out.println();
             System.out.println("Check Spelling  " + Chapter9.canSpell("gifnas", "fangsu"));
             System.out.println();
-
+            System.out.println("Test to return the first character in 'Hello' is : " + Chapter9.first("Hello"));
+            System.out.println();
+            System.out.println("Test to returns all except first in given String is : " + Chapter9.rest("hello"));
+            System.out.println();
+            System.out.println("Test to return all except first and last in given string is : " +Chapter9.middle("Hello"));
+            System.out.println();
+            System.out.println("Test to return the length of given string is : "+ Chapter9.length("hello"));
+            System.out.println();
+            Chapter9.printString("hello");
+            System.out.println();
+            Chapter9.printBackward("hello");
+            
         }
 
         else{
