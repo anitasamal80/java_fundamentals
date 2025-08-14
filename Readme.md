@@ -14,6 +14,7 @@
 - Chapter 7 (Loops)
 - Chapter 8 (Arrays)
 - Chapter 9 (Strings and things)
+- Chapter 10 (Objects)
 
 
 ### Installation
