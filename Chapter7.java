@@ -50,7 +50,7 @@ public static double powerIterativeMethod (double x, int n){
     return result;
 }
 
-// Exercise 7.4   
+// Exercise 7.4  Program to find out the Factorial using recursive method 
 public static int factorial(int n) {
 if (n == 0) {
 return 1;
@@ -59,13 +59,16 @@ int recurse = factorial(n - 1);
 int result = n * recurse;
 return result;
 }
-//7.5
+
+//7.5 program to find out the factorial using Iterative method.
 public static int factorialIterative(int n){
     int factorialResult = 1;
     
     for (int i = 2; i <= n; i++){
 
-        factorialResult *=i;
+        //System.out.println(factorialResult *=i);
+        
+        factorialResult *=i ;
     }
     return factorialResult;
 }

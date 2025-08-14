@@ -3,12 +3,14 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 
 //import static Chapter7.check;
+import java.awt.Point;
+import java.awt.Rectangle;
 import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
     public static void menu(Scanner scanner, int number){
-        System.out.println("choose chapter wise exercise for solution  :-\n 1:chapter1 \n 2:chapter2 \n 3:chapter3 \n 4:chapter4 \n 5:chapter5 \n 6:chapter6 \n 7:chapter7 \n 8:chapter8 \n 9:chapter9\n");
+        System.out.println("choose chapter wise exercise for solution  :-\n 1:chapter1 \n 2:chapter2 \n 3:chapter3 \n 4:chapter4 \n 5:chapter5 \n 6:chapter6 \n 7:chapter7 \n 8:chapter8 \n 9:chapter9\n 10:chapter10\n");
         System.out.print("Choose your option: ");
         int userInput = scanner.nextInt();
 
@@ -164,9 +166,9 @@ public class Main {
             System.out.println();
             System.out.println("The square root of " + number1 + " is " + result);
             System.out.println();
-            System.out.println("Factorial Using Recursive Method is:  " +Chapter7.factorial(5));
+            System.out.println("Factorial Using Recursive Method is:  " +Chapter7.factorial(30));
             System.out.println();
-            System.out.println("Iterative Factorial Method : " + Chapter7.factorialIterative(5));
+            System.out.println("Iterative Factorial Method : " + Chapter7.factorialIterative(30));
             System.out.println();
             System.out.println("Power Iterative Method " +Chapter7.powerIterativeMethod(2, 10));
             System.out.println();
@@ -249,7 +251,41 @@ public class Main {
             Chapter9.printBackward("hello");
             
         }
+        else if(userInput == 10){
+            System.out.println();
+            System.out.println("The output of the program is ");
+            int x = 5;
+            Point blank = new Point(1, 2);
+            System.out.println(Chapter10.riddle(x, blank));
+            System.out.println(x);
+            System.out.println(blank.x);
+            System.out.println(blank.y);   
+            System.out.println();
 
+            System.out.println("The output of the program is ");
+            Point ss = new Point(5, 8);
+            Rectangle rect = new Rectangle(0, 2, 4, 4);
+            Point center = Chapter10.findCenter(rect);
+            double dist = Chapter10.distance(center, ss);
+            System.out.println(dist); 
+            System.out.println();
+
+            System.out.println("The output of the program is: ");
+            Rectangle box1 = new Rectangle(2, 4, 7, 9);
+            Point p1 = Chapter10.findCenter(box1);
+            Chapter10.printPoint(p1);
+            box1.grow(1, 1);
+            Point p2 = Chapter10.findCenter(box1);
+            Chapter10.printPoint(p2);
+            System.out.println();
+
+            System.out.println("Iterative Factorial Method Result In BigInteger : " + Chapter10.factorialIterative(15));
+
+            System.out.println();
+
+            System.out.println("Result in BigInteger : " + Chapter10.pow(10, 50));
+            System.out.println();
+        }
         else{
             System.out.println("Invalid option. Please choose option between (1 - 9) : ");
             menu(scanner, number);
