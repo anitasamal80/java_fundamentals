@@ -15,6 +15,7 @@
 - Chapter 8 (Arrays)
 - Chapter 9 (Strings and things)
 - Chapter 10 (Objects)
+- Chapter 11 (Classes)
 
 
 ### Installation
