@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void menu(Scanner scanner, int number){
-        System.out.println("choose chapter wise exercise for solution  :-\n 1:chapter1 \n 2:chapter2 \n 3:chapter3 \n 4:chapter4 \n 5:chapter5 \n 6:chapter6 \n 7:chapter7 \n 8:chapter8 \n 9:chapter9\n 10:chapter10\n");
+        System.out.println("choose chapter wise exercise for solution  :-\n 1:chapter1 \n 2:chapter2 \n 3:chapter3 \n 4:chapter4 \n 5:chapter5 \n 6:chapter6 \n 7:chapter7 \n 8:chapter8 \n 9:chapter9\n 10:chapter10\n 11:chapter11\n");
         System.out.print("Choose your option: ");
         int userInput = scanner.nextInt();
 
@@ -285,6 +285,13 @@ public class Main {
 
             System.out.println("Result in BigInteger : " + Chapter10.pow(10, 50));
             System.out.println();
+        }
+
+        else if(userInput == 11){
+            System.out.println("SHOPPING CART PROGRAM");
+            System.out.println();
+            Chapter11.chapter11(scanner);
+            
         }
         else{
             System.out.println("Invalid option. Please choose option between (1 - 9) : ");
